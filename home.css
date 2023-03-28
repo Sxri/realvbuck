@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+/*
+    Alata: font-family: 'Alata', sans-serif; | Title
+*/
+
+
+body {
+    overscroll-behavior: none;
+    background-color: black;
+    height: 3000px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(9,9,121,1) 40%, rgba(158,0,255,1) 100%);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(10px); /* blur effect */
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0 5px;
+  }
+  
+  .navbar a {
+    font-family: "Quicksand";
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #5899e2;
+    background-color: transparent;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .navbar a:hover {
+    background-color: #274060;
+    color: #fff;
+  }
+
+.tinytxt {
+    position: absolute;
+    font-family: 'Alata', sans-serif;
+    padding-top: 125px;
+    color: whitesmoke;
+    font-size: 10px;
+    padding-left: 80px;
+    text-align: left;
+}
+
+b {
+    color: #cc00ff;
+    text-shadow: 0px 0px 15px rgba(255,255,255,0.50);
+    animation: b 3s linear infinite;
+}
+
+@keyframes b {
+  0% {
+    color: #cc00ff
+  }
+  50%{
+    color:#86beff
+  }
+  100%{
+    color:#cc00ff
+  }
+}
+
+h1 {
+    position: relative;
+    font-family: 'Alata', sans-serif;
+    padding-top: 125px;
+    color: whitesmoke;
+    font-size: 90px;
+    padding-left: 80px;
+    text-align: left;
+}
+
+
+h2 {
+    font-family: 'Alata', sans-serif;
+    padding-top: 250px;
+    padding-left: 60px;
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: left;
+    position: absolute;
+}
+
+h3 {
+  position:absolute;
+  font-family: 'Alata', sans-serif;
+  padding-top: 550px;
+  padding-left: 370px;
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: right;
+}
+
+.card {
+    z-index: 6;
+}
+
+@media screen and (max-width:665px)
+{
+
+h1 {
+    padding-top: 75px;
+    font-size: 40px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+h3 {
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+h2 {
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+
+}
