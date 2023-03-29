@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 /*
     Alata: font-family: 'Alata', sans-serif; | Title
 */
+
+html,body
+{
+    width: 100%;
+    overflow-x: hidden; 
+    overscroll-behavior: none;
+    height: 3010px;
+}
 
 
 body {
     overscroll-behavior: none;
     background-color: black;
-    height: 3000px;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(9,9,121,1) 40%, rgba(158,0,255,1) 100%);
 }
@@ -87,6 +95,44 @@ h1 {
     text-align: left;
 }
 
+h4 {
+  position: relative;
+  font-family: 'Alata', sans-serif;
+  padding-top: 900px;
+  color: whitesmoke;
+  font-size: 90px;
+  padding-left: 80px;
+  text-align: left;
+}
+
+
+
+img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  padding: 70px 930px;
+  opacity: 0.5;
+  animation: img 10s linear infinite;
+}
+
+@keyframes img {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100%{
+    opacity: 0.5;
+  }
+}
 
 h2 {
     font-family: 'Alata', sans-serif;
@@ -96,6 +142,131 @@ h2 {
     font-size: 50px;
     text-align: left;
     position: absolute;
+}
+
+
+h5 {
+  font-family: 'Alata', sans-serif;
+  padding-top: 650px;
+  padding-left: 40px;
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: left;
+  position: absolute;
+}
+
+footer {
+  background-color:#274060;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.50);
+  height: 150px;
+  border-radius: 10px;
+  left: 49%; 
+  top: 50%;
+  right: 0;
+  font-family: 'Alata', sans-serif;
+  color: whitesmoke;
+}
+
+p {
+  top: 50%;
+  left: 50%;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.faqbox {
+  background-color: #cc00ff;
+  padding: 80px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 49%; 
+  transform: translateX(-50%);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.50);
+  text-align: left;
+  display: flex;
+}
+
+span {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 20%;
+  top: 25%;
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+}
+
+span-2 {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 17%;
+  top: 70%;
+  font-size: 35px;
+  font-family: 'Alata', sans-serif;
+  color: #fff;
+  animation: faqanswer 3s linear infinite;
+  line-height: 30px;
+}
+
+span-3 {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 21.8%;
+  top: 25%;
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+}
+
+span-4 {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 24.5%;
+  top: 70%;
+  font-size: 35px;
+  font-family: 'Alata', sans-serif;
+  color: #fff;
+  animation: faqanswer 3s linear infinite;
+  line-height: 30px;
+}
+
+span-5 {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 21%;
+  top: 25%;
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+}
+
+span-6 {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 23%;
+  top: 70%;
+  font-size: 35px;
+  font-family: 'Alata', sans-serif;
+  color: #fff;
+  animation: faqanswer 3s linear infinite;
+  line-height: 30px;
+}
+
+@keyframes faqanswer {
+  0% {
+    color: #fff
+  }
+  50%{
+    color:#86beff
+  }
+  100%{
+    color: #fff;
+  }
 }
 
 h3 {
@@ -112,8 +283,15 @@ h3 {
     z-index: 6;
 }
 
-@media screen and (max-width:665px)
+@media screen and (max-width:768px)
 {
+
+  h4 {
+    padding-top: 75px;
+    font-size: 40px;
+    padding-left: 0px;
+    text-align: center;
+}
 
 h1 {
     padding-top: 75px;
@@ -124,7 +302,7 @@ h1 {
 
 h3 {
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   padding-left: 0px;
   padding-right: 0px;
@@ -133,11 +311,15 @@ h3 {
 
 h2 {
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   padding-left: 0px;
   padding-right: 0px;
 
+}
+
+img {
+  display: none;
 }
 
 
