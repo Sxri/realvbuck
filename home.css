@@ -277,6 +277,17 @@ span-6 {
   }
 }
 
+.h8 {
+  position: relative;
+  font-family: 'Alata', sans-serif;
+  padding-top: 900px;
+  color: whitesmoke;
+  font-size: 90px;
+  padding-left: 80px;
+  text-align: left;
+  display: none;
+}
+
 h3 {
   position:absolute;
   font-family: 'Alata', sans-serif;
@@ -293,6 +304,19 @@ h3 {
 
 @media screen and (max-width:768px)
 {
+
+footer {
+  display: none;
+}
+
+h4 {
+  display: none;
+  
+}
+
+h8 {
+display: flex;
+}
 
   span {
     position: absolute;
